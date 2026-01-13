@@ -177,10 +177,10 @@
 
         sym_layer {
             bindings = <
-        &trans  &trans        &trans         &trans       &trans    &kp NB_EQUAL  &kp NB_LESS_THAN    &kp NB_EQUAL              &kp NB_GREATER_THAN  &kp NB_ASTERISK
-        &trans  &kp BSPC      &kp NB_DOLLAR  &kp NB_HASH  &trans    &trans        &kp NB_EXCLAMATION  &kp NB_QUESTION           &kp NB_AMPERSAND     &trans
-&trans  &trans  &kp NB_TILDE  &kp NB_PIPE    &trans       &trans    &kp NB_SLASH  &kp LS(FSLH)        &kp LS(LA(NB_BACKSLASH))  &kp NB_PERCENT       &trans           &trans
-                              &trans         &mo 3        &trans    &trans        &trans              &trans
+        &trans  &trans        &trans         &trans       &trans    &kp LS(NUMBER_2)     &kp NB_LESS_THAN    &kp NB_EQUAL              &kp NB_GREATER_THAN  &kp NB_ASTERISK
+        &trans  &kp BSPC      &kp NB_DOLLAR  &kp NB_HASH  &trans    &kp NB_SINGLE_QUOTE  &kp NB_EXCLAMATION  &kp NB_QUESTION           &kp NB_AMPERSAND     &trans
+&trans  &trans  &kp NB_TILDE  &kp NB_PIPE    &trans       &trans    &kp NB_SLASH         &kp NB_SLASH        &kp LS(LA(NB_BACKSLASH))  &kp NB_PERCENT       &trans           &kp NB_AT
+                              &trans         &mo 3        &trans    &trans               &trans              &trans
             >;
         };
 
