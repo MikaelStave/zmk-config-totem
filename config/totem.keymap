@@ -60,6 +60,7 @@
         sqbrackete {
             bindings = <&kp NB_RIGHT_BRACKET>;
             key-positions = <5 6>;
+            layers = <0>;
         };
 
         brackete {
@@ -68,13 +69,14 @@
         };
 
         sgbrackete {
-            bindings = <&kp NB_RIGHT_BRACE>;
+            bindings = <&kp LS(LA(NB_RIGHT_BRACE))>;
             key-positions = <26 27>;
         };
 
         menu {
             bindings = <&kp LG(SPACE)>;
             key-positions = <34 35>;
+            layers = <0>;
         };
 
         semi {
@@ -95,6 +97,18 @@
         nb_aa {
             bindings = <&kp NB_A_RING>;
             key-positions = <19 31>;
+        };
+
+        mac_bracket {
+            bindings = <&kp LS(LA(N8))>;
+            key-positions = <24 25>;
+            layers = <4>;
+        };
+
+        mac_bracket_left {
+            bindings = <&kp LS(LA(N9))>;
+            key-positions = <26 27>;
+            layers = <4>;
         };
     };
 
@@ -186,10 +200,29 @@
 
         mouse_layer {
             bindings = <
-        &sys_reset    &bt BT_CLR  &trans     &trans    &trans       &msc SCRL_UP    &trans          &mmv MOVE_UP       &trans           &trans
+        &sys_reset    &bt BT_CLR  &trans     &trans    &trans       &msc SCRL_UP    &trans          &mmv MOVE_UP       &trans           &to 4
         &bootloader   &bt BT_NXT  &mkp LCLK  &mkp MB2  &mkp MCLK    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &trans
 &trans  &out OUT_TOG  &bt BT_PRV  &trans     &trans    &trans       &kp C_PREV      &kp C_NEXT      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp K_MUTE
                                   &trans     &trans    &trans       &trans          &trans          &trans
+            >;
+        };
+
+        mac_base {
+            label = "MAC_BASE";
+            bindings = <
+            &kp Q               &kp W       &kp E                     &kp R           &kp T        &kp Y          &kp U           &kp I             &kp O           &kp P
+            &mt LEFT_CONTROL A  &mt LALT S  &mt LEFT_SHIFT D          &mt LEFT_GUI F  &kp G        &kp H          &mt LEFT_GUI J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_CONTROL NB_O_SLASH
+&caps_word  &kp Z               &kp X       &kp C                     &kp V           &kp B        &kp N          &kp M           &kp NB_COMMA      &kp NB_DOT      &kp FSLH                     &kp NB_AE
+                                            &mt LS(LA(LC(LGUI))) ESC  &lt 1 TAB       &kp SPACE    &kp BACKSPACE  &lt 5 ENTER     &kp LEFT_SHIFT
+            >;
+        };
+
+        Mac_Symbols {
+            bindings = <
+        &trans  &kp Y         &kp ESC           &kp RET           &trans    &kp LS(NUMBER_2)     &kp LT              &kp LS(N0)      &kp LS(GT)      &kp LS(AT_SIGN)
+        &trans  &kp BSPC      &kp LS(NUMBER_4)  &kp LS(NUMBER_3)  &trans    &kp NB_SINGLE_QUOTE  &kp NB_EXCLAMATION  &kp LS(QMARK)   &kp LS(AMPS)    &trans
+&trans  &trans  &kp NB_TILDE  &kp LA(N7)        &trans            &trans    &kp NB_SLASH         &kp NB_SLASH        &kp LS(LA(N7))  &kp NB_PERCENT  &trans           &kp AT
+                              &trans            &mo 3             &trans    &trans               &trans              &trans
             >;
         };
     };
