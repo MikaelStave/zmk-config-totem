@@ -23,6 +23,7 @@
 #define ADJ  3
 #define TVP1 4
 #define TVP2 5
+#define COMBO_TIMEOUT 50
 
 &mt {
     quick-tap-ms = <100>;
@@ -36,81 +37,93 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <0 1>;
             bindings = <&kp NB_AT>;
         };
 
         sqbrackets {
-            timeout-ms = <100>;
+            timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <4 3>;
             bindings = <&kp NB_LEFT_BRACKET>;
         };
 
         brackets {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp NB_LEFT_PARENTHESIS>;
             key-positions = <13 14>;
         };
 
         sgbrackets {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp NB_LEFT_BRACE>;
             key-positions = <24 25>;
         };
 
         sqbrackete {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp NB_RIGHT_BRACKET>;
             key-positions = <5 6>;
             layers = <0>;
         };
 
         brackete {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp NB_RIGHT_PARENTHESIS>;
             key-positions = <15 16>;
         };
 
         sgbrackete {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp LS(LA(NB_RIGHT_BRACE))>;
             key-positions = <26 27>;
         };
 
         menu {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp LG(SPACE)>;
             key-positions = <34 35>;
             layers = <0>;
         };
 
         semi {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp NB_SEMICOLON>;
             key-positions = <27 28>;
         };
 
         colon {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp NB_COLON>;
             key-positions = <28 29>;
         };
 
         underline {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp NB_UNDERSCORE>;
             key-positions = <29 30>;
         };
 
         nb_aa {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp NB_A_RING>;
             key-positions = <19 31>;
         };
 
         mac_bracket {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp LS(LA(N8))>;
             key-positions = <24 25>;
             layers = <4>;
         };
 
         mac_bracket_left {
+            timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp LS(LA(N9))>;
             key-positions = <26 27>;
             layers = <4>;
         };
-    };
+    }
 
     macros {
         gif: gif {
