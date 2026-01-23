@@ -219,9 +219,9 @@
 
         Mac_Symbols {
             bindings = <
-        &trans  &kp Y         &kp ESC           &kp RET           &trans    &kp LS(NUMBER_2)     &kp LT              &kp LS(N0)      &kp LS(GT)      &kp LS(AT_SIGN)
-        &trans  &kp BSPC      &kp LS(NUMBER_4)  &kp LS(NUMBER_3)  &trans    &kp NB_SINGLE_QUOTE  &kp NB_EXCLAMATION  &kp LS(QMARK)   &kp LS(AMPS)    &trans
-&trans  &trans  &kp NB_TILDE  &kp LA(N7)        &trans            &trans    &kp NB_SLASH         &kp NB_SLASH        &kp LS(LA(N7))  &kp NB_PERCENT  &trans           &kp AT
+        &trans  &kp Y         &kp ESC           &kp RET           &trans    &kp LS(NUMBER_2)     &kp NUBS            &kp LS(N0)      &kp LS(NUBS)    &kp LS(NON_US_HASH)
+        &trans  &kp BSPC      &kp LS(NUMBER_4)  &kp LS(NUMBER_3)  &trans    &kp NB_SINGLE_QUOTE  &kp NB_EXCLAMATION  &kp LS(EQUAL)   &kp LS(N6)      &trans
+&trans  &trans  &kp NB_TILDE  &kp LA(N7)        &trans            &trans    &kp NB_SLASH         &kp NB_SLASH        &kp LS(LA(N7))  &kp NB_PERCENT  &trans               &kp NON_US_HASH
                               &trans            &mo 3             &trans    &trans               &trans              &trans
             >;
         };
