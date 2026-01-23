@@ -83,7 +83,6 @@
             timeout-ms = <COMBO_TIMEOUT>;
             bindings = <&kp LG(SPACE)>;
             key-positions = <34 35>;
-            layers = <0>;
         };
 
         semi {
